@@ -16,7 +16,15 @@ Learning MongoDB can enhance your skill set as a tech professional, open up care
 
 ## How to Learn MongoDB
 
-There are many ways to start learning MongoDB. MongoDB provides official documentation and a MongoDB University to help new and experienced users learn and hone their skills, both free resources.
+There are many ways to start learning MongoDB. MongoDB provides official documentation as well as MongoDB University to help new and experienced users learn and hone their skills, both free and highly recommended resources.
 
 [MongoDB Official Documentation](https://www.mongodb.com/docs/)
+
 [MongoDB University](https://learn.mongodb.com/)
+
+## MongoDB Primer
+
+If you want to quickly get started or simply understand how MongoDB works, this primer is perfect for you.
+
+> **Note**
+> Test Note
