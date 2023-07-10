@@ -66,4 +66,8 @@ Save and continue to the Atlas main page.
 
 ## Load Sample Data
 
-We will use the sample data that MongoDB provides for the following exercises. You might see an option to load sample data  
+We will use the sample data that MongoDB provides for the following exercises. You might see an option to load sample data like this one:
+
+![](assets/images/sample 1.png)
+
+
