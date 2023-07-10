@@ -22,15 +22,48 @@ There are many ways to start learning MongoDB. MongoDB provides official documen
 
 [MongoDB University](https://learn.mongodb.com/)
 
-## MongoDB Primer
+# MongoDB Primer
 
 If you want to quickly get started or simply understand how MongoDB works, this primer is perfect for you.
 
-**Note**
-Test Note
+At the time of writing this (July 10th 2023) I am using the following versions:
 
-not note
+| Software | Version |
+| --------- | -------|
+| MongoDB | 6.0.6 (API Version 1) |
+| Mongosh | 1.10.1 |
+| MongoDB Compass | 1.38.2 |
 
-> **Note**
-It works with almost all markdown flavours (the below blank line matters).
+## Create a Free Account
 
+We will be using MongoDB Atlas for this primer. MongoDB Atlas is a managed cloud database service that allows you to easily deploy, scale, and manage MongoDB databases without worrying about infrastructure setup or maintenance.
+
+Create a free account [here](https://www.mongodb.com/cloud/atlas/register)
+
+## Deploy Database 
+
+After you confirm your email and sign in you will see the Deploy your database screen. 
+
+![](assets/images/deploy.png)
+
+Choose the free M0 option and select the provider that has a region closest to your location. 
+
+## Security Setup
+
+On the next screen you will have some options to secure your account. 
+
+![](assets/images/security.png)
+
+I used the following options for this guide:
+
+**Authenticate Connection:** Username and Password
+
+**Connect from:** My Local Environment
+
+You will also need to add your IP address to the access list by choosing "Add My Current IP Address."
+
+Save and continue to the Atlas main page.
+
+## Load Sample Data
+
+We will use the sample data that MongoDB provides for the following exercises. You might see an option to load sample data  
