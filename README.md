@@ -136,11 +136,49 @@ Now that you are in the sample_restaurants database, run the show command but fo
 
 You should see the neighborhoods and restaurants collections. Let's focus on the restaurants collection first. 
 
-To see how many documents are in the restaurants collection we'll use the `countDocuments` function. 
+## Reading Data
 
+Before we begin reading and inturpreting data in the documents lets look at how the documents are structured in the restaurant collection.
 
+To see a single document in a collection use the `findOne()` function. Run the following command to see an example:
 
+`db.restaurants.findOne()`
 
+Here is a sample of the output:
+```json
+{
+  _id: ObjectId("5eb3d668b31de5d588f4292a"),
+  address: {
+    building: '2780',
+    coord: [ -73.98241999999999, 40.579505 ],
+    street: 'Stillwell Avenue',
+    zipcode: '11224'
+  },
+  borough: 'Brooklyn',
+  cuisine: 'American',
+  grades: [
+    { date: ISODate("2014-06-10T00:00:00.000Z"), grade: 'A', score: 5 },
+    { date: ISODate("2013-06-05T00:00:00.000Z"), grade: 'A', score: 7 },
+    {
+      date: ISODate("2012-04-13T00:00:00.000Z"),
+      grade: 'A',
+      score: 12
+    },
+    {
+      date: ISODate("2011-10-12T00:00:00.000Z"),
+      grade: 'A',
+      score: 12
+    }
+  ],
+  name: 'Riviera Caterer',
+  restaurant_id: '40356018'
+}
+```
+> **Note** the _id: field is a unique value that identifies each document, you can set this value manually or you can let MongoDB assign a unique _id to new documents when they are created
+
+Now that we know the structure of the documents we can start using the data. 
+
+ First let's see how many documents are in the restaurants collection we'll use the `countDocuments` function. 
 
 Run the following command to see how many restaurants are in the collection and compare your answer to the one below:
 
@@ -151,3 +189,52 @@ Run the following command to see how many restaurants are in the collection and 
 25359
 
 </details>
+
+We are about to build out a query to find specific restaurants. we'll do it in steps so that you can see how each field changes the results.
+
+### Using Find and countDocuments
+
+By adding fields to search for values we can refine this list. Here is the command to find all "American" cuisine restaurants in the collection:
+
+`db.restaurants.find({cuisine: "American"})`
+
+There are lots of documents that match, what is the command you should use to see the exact count? Check your answer below:
+
+<details><summary>See answer</summary>
+
+`db.restaurants.countDocuments({cuisine: "American"})`
+
+</details>
+
+How many documents were there?
+
+<details><summary>See answer</summary>
+
+6183
+
+</details>
+
+Let's narrow our results even further. Lets look for American cuisine restaurants in the Bronx. You can add additional fields and values separated by a comma, like this (we'll stick with `countDocuments` for now to return the number of results):
+
+`db.restaurants.countDocuments({cuisine: "American", borough: "Bronx"})`
+
+<details><summary>See answer</summary>
+
+411
+
+</details>
+
+Suppose we want a Tavern like atmosphere, lets use regex to find restaurants with Tavern in the name and list the number of matching documents:
+
+`db.restaurants.countDocuments({"name": { $regex: /Tavern/} ,cuisine: "American", borough:"Bronx"})`
+
+<details><summary>See answer</summary>
+
+8
+
+</details>
+
+To see the documents that match our criteria replace the `countDocuments()` function with the `find()` function.
+
+`db.restaurants.find({"name": { $regex: /Tavern/} ,cuisine: "American", borough:"Bronx"})`
+
