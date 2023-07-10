@@ -100,6 +100,25 @@ Since you already have MongoDB Shell installed choose that option and then copy/
 
 >**Note** Remember to replace `<username>` with the username you created when you deployed the cluster.
 
+![](assets/images/connect%202.png)
+
+Enter your password for that user and press enter. You should see something like this when you are connected:
+
+![](assets/images/connected.png)
+
+You are now connected via mongosh!
+
+## Basic Navigation
+
+To show all of the databases run the following command:
+
+`show dbs`
+
+<details><summary>See output</summary>
+<p>
+![](assets/images/show.png)
+</p>
+</details>
 
 
 
