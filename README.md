@@ -115,10 +115,15 @@ To show all of the databases run the following command:
 `show dbs`
 
 <details><summary>See output</summary>
-<p>
-![](assets/images/show.png)
-</p>
+
+![Alt text](assets/images/show.png)
+
 </details>
 
+Let's use the `sample_restaurants` database for our first practice exercise. 
 
+Switch to the `sample_restaurants` database by using the `use` command:
 
+`use sample_restaurants`
+
+> **Note** If a database dose not exist the `use` command will create it.
