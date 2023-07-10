@@ -68,6 +68,38 @@ Save and continue to the Atlas main page.
 
 We will use the sample data that MongoDB provides for the following exercises. You might see an option to load sample data like this one:
 
-![](assets/images/sample 1.png)
+![](assets/images/sample%201.png) 
+
+If you don't see the option to load sample data at the top you can do so by selecting the more options icon (...) and then selecting "Load Sample Dataset" like this:
+
+![](assets/images/sample%202.png)
+
+Confirm that you are about to load the sample data and wait for the following message to confirm it has been loaded:
+
+![](assets/images/loaded.png)
+
+<!-- Break this into separate sections-->
+
+## Installing mongosh
+
+Next you need to install `mongosh` the process varies depending on your local operating system. Follow the download and install instructions for your system [here](https://www.mongodb.com/docs/mongodb-shell/install/)
+
+Once you have `mongosh` installed you are ready to connect. 
+
+## Connecting via Shell
+
+Click the "Connect" button in Atlas:
+
+![](assets/images/connect%200.png)
+
+This will bring up the menu to choose the type of connection, select "Shell" :
+
+![](assets/images/connect%201.png)
+
+Since you already have MongoDB Shell installed choose that option and then copy/paste the connection string into your terminal.
+
+>**Note** Remember to replace `<username>` with the username you created when you deployed the cluster.
+
+
 
 
