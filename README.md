@@ -30,9 +30,7 @@ If you want to quickly get started or simply understand how MongoDB works, this 
 Test Note
 
 not note
----
-**NOTE**
 
+> **Note**
 It works with almost all markdown flavours (the below blank line matters).
 
----
