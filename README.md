@@ -127,3 +127,27 @@ Switch to the `sample_restaurants` database by using the `use` command:
 `use sample_restaurants`
 
 > **Note** If a database dose not exist the `use` command will create it. To avoid misspelling use tab complete. 
+
+You should see a confirmation message that you've switched to the sample_restaurants database.
+
+Now that you are in the sample_restaurants database, run the show command but for collections:
+
+`show collections`
+
+You should see the neighborhoods and restaurants collections. Let's focus on the restaurants collection first. 
+
+To see how many documents are in the restaurants collection we'll use the `countDocuments` function. 
+
+
+
+
+
+Run the following command to see how many there are and compare your answer to the one below:
+
+`db.restaurants.countDocuments()`
+
+<details><summary>See answer</summary>
+
+25359
+
+</details>
