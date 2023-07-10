@@ -26,5 +26,7 @@ There are many ways to start learning MongoDB. MongoDB provides official documen
 
 If you want to quickly get started or simply understand how MongoDB works, this primer is perfect for you.
 
-> **Note**
-> Test Note
+**Note**
+Test Note
+
+not note
