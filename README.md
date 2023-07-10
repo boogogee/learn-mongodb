@@ -126,4 +126,4 @@ Switch to the `sample_restaurants` database by using the `use` command:
 
 `use sample_restaurants`
 
-> **Note** If a database dose not exist the `use` command will create it.
+> **Note** If a database dose not exist the `use` command will create it. To avoid misspelling use tab complete. 
