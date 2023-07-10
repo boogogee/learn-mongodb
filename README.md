@@ -142,7 +142,7 @@ To see how many documents are in the restaurants collection we'll use the `count
 
 
 
-Run the following command to see how many there are and compare your answer to the one below:
+Run the following command to see how many restaurants are in the collection and compare your answer to the one below:
 
 `db.restaurants.countDocuments()`
 
